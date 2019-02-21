@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>frontEnd</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="frontend.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body onload="loadFiles()">
+<div class="row">
+  <div class="column">
+    <h1>All invoices - 2016 </h1>
+    <table class= "invoiceList" id = "invoices">
+      <tr>
+      <th onClick = "sortBy(0)">Type &#9663;</th>
+      <th onClick = "sortBy(1)">Account Name &#9663;</th>
+      <th onClick = "sortBy(2)">Status &#9663;</th>
+      <th onClick = "sortBy(3)">Currency &#9663;</th>
+      <th onClick = "sortBy(4)">Balance &#9663;</th>
+      </tr>
+    </table>
+  </div>
+  <div class="column2">
+    <div class="infoFrame">
+      <div class="infoFrameImage">
+        <div class="crop">
+        <img src="trump.jpg">
+      </div>
+      </div>
+      <div class="infoFrameText">
+        <div class="accountName">
+          AccountName
+        </div>
+        <div class="infoRow">
+          <div class="infoBox" id="type">
+            <div class="header">
+            <b>Type</b>
+            </div>
+            <div class="content">
+            Hello
+          </div>
+          </div>
+          <div class="infoBox" id="accountName">
+            <div class="header">
+            <b>accountName</b>
+            </div>
+            <div class="content">
+            Hello
+          </div>
+          </div>
+        </div>
+        <div class="infoRow">
+          <div class="infoBox" id="status">
+            <div class="header">
+            <b>status</b>
+            </div>
+            <div class="content">
+            Hello
+          </div>
+          </div>
+          <div class="infoBox" id="currency">
+            <div class="header">
+            <b>currency</b>
+            </div>
+            <div class="content">
+            Hello
+          </div>
+          </div>
+        </div>
+        <div class="infoRow">
+          <div class="infoBox" id="balance">
+            <div class="header">
+            <b>balance</b>
+            </div>
+            <div class="content">
+            Hello
+          </div>
+          </div>
+          <div class="infoBox" id="notes">
+            <div class="header">
+            <b>notes</b>
+            </div>
+            <div class="content">
+            Lorem ipsum dolor sit amet, viris blandit mediocrem id.
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="X" onClick="hideInfoFrame()">
+      <b>X</b>
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="frontend.js"></script>
+</html>
